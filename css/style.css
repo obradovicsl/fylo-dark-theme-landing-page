@@ -314,10 +314,8 @@ header {
     position: relative;
 }
 
-.cta-form::after {
-    content: "Please enter a valid email address";
+.cta-form-error {
     color: #ff4242;
-    font-family: inherit;
     font-weight: 700;
     font-size: 1.1rem;
     bottom: 0;
