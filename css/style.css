@@ -107,3 +107,49 @@ header {
     border-radius: 1000px;
     background: linear-gradient(to right, #65e2d9, #339ecc)
 }
+
+/*
+//////////////////////
+    FEATURES SECTION
+/////////////////////
+*/
+
+.section-features {
+    background-color: #181f2a;
+    padding-bottom: 9rem;
+}
+
+.features-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid--cols--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6.4rem;
+}
+
+.feature-logo {
+    width: 7rem;
+    margin-bottom: 2.4rem;
+}
+
+.security-logo {
+    width: 5rem;
+}
+
+.heading-secondary {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.feature-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    max-width: 31rem;
+    line-height: 1.5;
+    margin: 0 auto;
+}
