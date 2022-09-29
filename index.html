@@ -14,18 +14,6 @@
 
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: rgb(62, 82, 163);
-    }
-  </style>
 </head>
 
 <body>
@@ -35,9 +23,15 @@
 
     <nav class="main-nav">
       <ul class="nav-items">
-        <li class="nav-item">Features</li>
-        <li class="nav-item">Team</li>
-        <li class="nav-item">Sign in</li>
+        <li>
+          <a href="#" class="nav-item">Features</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">Team</a>
+        </li>
+        <li>
+          <a href="#" class="nav-item">Sign in</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -203,38 +197,99 @@
         <img src="images/bg-quotes.png" alt="" class="blockquote">
       </div>
     </section>
+
+    <section class="section-cta">
+      <div class="cta-container">
+        <h1 class="heading-primary">Get early access today</h1>
+
+        <p class="cta-text"> It only takes a minute to sign up and our free starter tier is extremely generous. If you
+          have any
+          questions, our support team would be happy to help you.</p>
+
+        <form class="cta-form" action="">
+          <input required placeholder="email@example.com" type="email" class="cta-input">
+
+          <button class="btn btn-cta">Get Started For Free</button>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <!-- 
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-  questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy -->
-
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="footer-container">
+      <img src="images/logo.svg" alt="" class="footer-logo">
+
+      <div class="grid--cols--5">
+
+        <div class="location">
+          <img src="images/icon-location.svg" alt="" class="location-icon">
+          <p class="text-location">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </p>
+        </div>
+
+        <div class="contact">
+          <div class="grid--cols--2-f">
+            <img src="images/icon-phone.svg" alt="" class="phone-icon">
+            <p class="phone"> +1-543-123-4567</p>
+
+            <img src="images/icon-email.svg" alt="" class="mail-icon">
+            <p class="mail"> example@fylo.com</p>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <ul class="f-nav-items">
+
+            <li>
+              <a href="#" class="f-nav-item">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="f-nav-item">Jobs</a>
+            </li>
+            <li>
+              <a href="#" class="f-nav-item">Press</a>
+            </li>
+            <li>
+              <a href="#" class="f-nav-item">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <ul class="f-nav-items">
+            <li>
+              <a href="#" class="f-nav-item">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="f-nav-item">Terms</a>
+            </li>
+            <li>
+              <a href="#" class="f-nav-item">Privacy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <a href="#">
+            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+          </a>
+          <a href="#">
+            <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+          </a>
+        </div>
+
+      </div>
+    </div>
   </footer>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

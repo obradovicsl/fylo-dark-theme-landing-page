@@ -45,11 +45,19 @@ header {
 .nav-items {
     list-style: none;
     display: flex;
-    gap: 4.4rem;
+    gap: 5.6rem;
 }
 
-.nav-item {
+.nav-item:link,
+.nav-item:visited {
     font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item:hover,
+.nav-item:active {
+    border-bottom: 1px solid #fff;
 }
 
 /*
@@ -102,6 +110,11 @@ header {
     padding: 1.6rem 7.4rem;
     border-radius: 1000px;
     background: linear-gradient(to right, #65e2d9, #339ecc)
+}
+
+.btn:hover,
+.btn:active {
+    background: #65e2d9;
 }
 
 /*
@@ -191,6 +204,12 @@ header {
     border-bottom: 1px solid #65e2d9;
 }
 
+.productive-link:hover,
+.productive-link:active {
+    color: #fff;
+    border-color: #fff;
+}
+
 /*
 //////////////////////
   TESTIMONIAL SECTION
@@ -199,7 +218,7 @@ header {
 
 .testimonial-section {
     background: #181f2a;
-    padding: 8rem 0;
+    padding: 8rem 0 0 0;
 }
 
 .testimonial {
@@ -209,6 +228,7 @@ header {
     padding: 3.2rem 2.4rem;
     position: relative;
     z-index: 10;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2)
 }
 
 .testimonial-text {
@@ -250,4 +270,180 @@ header {
 .grid--cols--3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+/*
+//////////////////////
+     CTA SECTION
+/////////////////////
+*/
+
+.section-cta {
+    padding: 4rem 0 0 0;
+    background: #181f2a;
+}
+
+.cta-container {
+    max-width: 80rem;
+    background: #1c2431;
+    margin: 0 auto;
+    padding: 4.4rem 6.4rem;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    text-align: center;
+    transform: translateY(50%);
+}
+
+.btn-cta {
+    font-size: 1.4rem;
+    padding: 1.6rem 3.2rem;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 0 4.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.cta-form {
+    display: flex;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cta-form::after {
+    content: "Please enter a valid email address";
+    color: #ff4242;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.1rem;
+    bottom: 0;
+    left: 0;
+    transform: translate(10%, 190%);
+    position: absolute;
+    display: none;
+}
+
+.cta-input {
+    display: inline-block;
+    width: 65%;
+    border: none;
+    padding: 1.6rem 3.2rem;
+    color: #1c2431;
+    border-radius: 100px;
+}
+
+.cta-input::placeholder {
+    color: #bbb;
+}
+
+/*
+/////////////////////
+    FOOTER
+/////////////////////
+*/
+
+footer {
+    padding: 22rem 0 8rem 0;
+    background-color: #0b1523;
+}
+
+.footer-container {
+    max-width: 130rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 13%;
+    margin-bottom: 3.2rem;
+}
+
+.location {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+.location-icon {
+    padding-top: 0.6rem;
+    width: 1rem;
+}
+
+.text-location {
+    padding-right: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.grid--cols--2-f {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 15rem;
+    gap: 2.4rem;
+}
+
+.phone-icon {
+    width: 1.6rem;
+}
+
+.phone {
+    font-size: 1.2rem;
+}
+
+.mail-icon {
+    width: 1.6rem;
+}
+
+.mail {
+    font-size: 1.2rem;
+}
+
+.f-nav-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+}
+
+.f-nav-item {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.f-nav-item:hover,
+.f-nav-item:active {
+    color: #65e2d9;
+}
+
+.social {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.social a:link,
+.social a:visited {
+    height: 20%;
+}
+
+.social-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: #fff;
+}
+
+.social-icon:hover,
+.social-icon:active {
+    fill: #339ecc
+}
+
+.grid--cols--5 {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr 2fr;
+    gap: 4.4rem;
 }
