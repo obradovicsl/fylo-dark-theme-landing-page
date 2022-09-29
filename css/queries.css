@@ -1,0 +1,189 @@
+/*
+    bellow 1200px
+*/
+
+@media (max-width: 75rem) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+
+/*
+    below 960px
+*/
+@media (max-width: 60rem) {
+    html {
+        font-size: 50%;
+    }
+
+    .grid--cols--3 {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3.2rem;
+    }
+
+    .p-testimonial {
+        grid-column: span 2;
+        width: 50%;
+    }
+
+}
+
+/*
+    bellow 760px
+*/
+
+@media (max-width: 48rem) {
+
+    html {
+        font-size: 43.75%;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .cta-container {
+        width: 80%;
+    }
+
+    .section-cta {
+        padding: 0;
+    }
+
+    .cta-form {
+        flex-direction: column;
+    }
+
+    .cta-container {
+        padding: 2.2rem 3.2rem;
+    }
+
+    .grid--cols--5 {
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        justify-items: center;
+        padding: 0.8rem 1.6rem;
+        column-gap: 0;
+    }
+
+    .location,
+    .contact {
+        grid-column: span 3;
+    }
+
+    .footer-nav,
+    .footer-list,
+    .social {
+        grid-column: span 2;
+    }
+}
+
+/*
+    bellow 541px
+*/
+
+@media (max-width: 34rem) {
+
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .productive-img {
+        width: 60%;
+        margin-bottom: 4.4rem;
+    }
+
+    .content {
+        padding: 0 4.4rem;
+    }
+
+    .grid--cols--2 {
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        font-size: 1.6rem;
+    }
+
+    .section-features {
+        padding: 4.4rem 0;
+    }
+
+    .section-productive {
+        padding: 4.4rem 0;
+    }
+
+    .section-hero {
+        padding: 6.4rem 0;
+    }
+
+    .grid--cols--3 {
+        grid-template-columns: 1fr;
+        column-gap: 3rem;
+    }
+
+    .p-testimonial {
+        grid-column: 1;
+        width: 90%;
+    }
+
+    .testimonial-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 24rem) {
+    header {
+        padding: 2.4rem;
+    }
+
+    .heading-primary {
+        font-size: 2.4rem;
+    }
+
+    .content {
+        padding: 0 2rem;
+    }
+
+    .blockquote {
+        width: 5%;
+        transform: translate(200%, -80%);
+    }
+
+    .cta-container {
+        padding: 3.2rem 1.6rem;
+    }
+
+    .cta-text {
+        font-size: 1.6rem;
+    }
+
+    .cta-form {}
+
+    .cta-input {
+        width: 80%;
+        padding: 1.4rem 2.4rem;
+    }
+
+    .btn-cta {
+        width: 80%;
+    }
+
+    .footer-logo {
+        width: 40%;
+    }
+
+    .grid--cols--5 {
+        justify-items: start;
+        grid-template-columns: 1fr;
+    }
+
+    .social {
+        justify-self: center;
+    }
+
+    footer {
+        padding-top: 24rem;
+    }
+}
