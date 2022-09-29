@@ -77,6 +77,10 @@
     .social {
         grid-column: span 2;
     }
+
+    .footer-logo {
+        width: 17%;
+    }
 }
 
 /*
@@ -133,6 +137,10 @@
     }
 }
 
+/*
+    bellow 375px
+*/
+
 @media (max-width: 24rem) {
     header {
         padding: 2.4rem;
@@ -144,6 +152,15 @@
 
     .content {
         padding: 0 2rem;
+    }
+
+
+    .heading-secondary {
+        font-size: 1.8rem;
+    }
+
+    .feature-text {
+        font-size: 1.6rem;
     }
 
     .blockquote {
@@ -158,8 +175,6 @@
     .cta-text {
         font-size: 1.6rem;
     }
-
-    .cta-form {}
 
     .cta-input {
         width: 80%;
