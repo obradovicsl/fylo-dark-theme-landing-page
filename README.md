@@ -18,7 +18,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/obradovicsl/fylo-dark-theme-landing-page)
-- Live Site URL: [easybank-obradovicsl](https://fylo-obradovicsl.netlify.app/)
+- Live Site URL: [fylo-obradovicsl](https://fylo-obradovicsl.netlify.app/)
 
 ## My process
 
